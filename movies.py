@@ -20,8 +20,17 @@ else:
     else:
         age = int(input("Enter your age: "))
         if rating == 2 and age < 13:
-            print("You are not authorized to purchase tickets for this movie without a parent or adult guardian.")
+            parent = input("Parent with you?")
+            if (parent == "Y"):
+                print("You are authorized to purchase tickets for this movie.")
+            else:
+                print("You are not authorized to purchase tickets for this movie without a parent or adult guardian.")
         elif rating == 3 and age < 17:
+            parent = input("Parent with you?")
+            if (parent == "Y"):
+                print("You are authorized to purchase tickets for this movie.")
+            else:
+                print("You are not authorized to purchase tickets for this movie without a parent or adult guardian.")
             print("You are not authorized to purchase tickets for this movie without a parent or adult guardian.")
         else:
             print("You are authorized to purchase tickets for this movie.")
