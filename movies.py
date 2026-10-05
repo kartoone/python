@@ -31,6 +31,5 @@ else:
                 print("You are authorized to purchase tickets for this movie.")
             else:
                 print("You are not authorized to purchase tickets for this movie without a parent or adult guardian.")
-            print("You are not authorized to purchase tickets for this movie without a parent or adult guardian.")
         else:
             print("You are authorized to purchase tickets for this movie.")
